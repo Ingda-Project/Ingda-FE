@@ -8,7 +8,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
   background-color: #f8f8f8;
   font-family: 'NanumSquareR';
   font-weight: bold;
@@ -23,11 +22,15 @@ body {
   width: 400px;
   height: 600px;
   max-width: 80%;
-  max-height: 80%;
-  margin: auto; /* 가운데 정렬을 위해 추가 */
-  display: flex; /* 수직 중앙 정렬을 위해 추가 */
-  flex-direction: column; /* 컨테이너의 자식들을 수직으로 배열하기 위해 추가 */
-  justify-content: center; /* 수직 중앙 정렬을 위해 추가 */
+  margin: auto; /* 중앙 정렬 */
+  display: flex; /* 수직 중앙 정렬 */
+  flex-direction: column; /* 컨테이너 자식 수직 배열 */
+  justify-content: center; /* 수직 중앙 정렬 */
+}
+
+/* 로고 이미지 */
+.logo-ingda {
+  margin: 0 auto;
 }
 
 h2 {
@@ -40,10 +43,6 @@ form {
   align-items: center;
 }
 
-.logo-ingda {
-  margin: 0 auto;
-}
-
 input {
   padding: 8px;
   margin: 5px;
@@ -54,6 +53,7 @@ input {
   color: gray;
 }
 
+/* 이메일, 비밀번호 입력 */
 .email-input,
 .password-input {
   background-color: #fffcac;
@@ -61,6 +61,7 @@ input {
   width: 250px;
 }
 
+/* 이메일, 비밀번호 입력 및 로그인 버튼 */
 .email-input,
 .password-input,
 .login-btn {
@@ -85,6 +86,7 @@ button:hover {
   color: white;
 }
 
+/* 로그인 버튼 */
 .login-btn {
   background-color: #c7fedd;
   border-radius: 15px;
@@ -106,6 +108,7 @@ a:hover {
   margin-top: 20px;
 }
 
+/* 소셜 로그인 이미지 */
 .socialLogin img {
   margin-right: 20px;
   width: 35px;

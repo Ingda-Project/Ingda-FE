@@ -5,27 +5,22 @@ import { Link } from 'react-router-dom'
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [rememberMe, setRememberMe] = useState(false)
+  const [rememberId, setRememberId] = useState(false)
 
   const handleLogin = () => {
-    // 로그인 로직을 여기에 추가
+    // 로그인 로직
     console.log('Email:', email)
     console.log('Password:', password)
-    console.log('Remember Me:', rememberMe)
+    console.log('Remember Id:', rememberId)
   }
 
-  const handleImageClick = () => {
-    // 소셜 로그인 로직을 여기에 추가
+  const handleSocialLogin = () => {
+    // 소셜 로그인 로직
   }
 
   return (
     <div className="login-container">
-      <img
-        src="images/logo_ingda.png" // 로고 이미지 URL을 여기에 추가하세요
-        alt="Logo"
-        className="logo-ingda"
-        width="70"
-      />
+      <img src="images/logo_ingda_2.png" className="logo-ingda" width="110" />
       <h2>Welcome to Ingda!</h2>
       <form>
         <label>
@@ -53,14 +48,15 @@ const Login = () => {
         <label>
           <input
             type="checkbox"
-            checked={rememberMe}
-            onChange={() => setRememberMe(!rememberMe)}
+            checked={rememberId}
+            onChange={() => setRememberId(!rememberId)}
           />
           아이디 기억하기
         </label>
         <br />
       </form>
       <div>
+        {/* 회원가입 및 아이디/비밀번호 찾기 */}
         {/*<Link to="/register">회원가입</Link>*/}
         <a href="/forgot">회원가입</a>
         <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
@@ -68,14 +64,14 @@ const Login = () => {
       </div>
       <div className="socialLogin">
         {/* 소셜 로그인 */}
-        <img src="images/logo_kakao.png" onClick={handleImageClick} />
-        <img src="images/logo_facebook.jpg" onClick={handleImageClick} />
+        <img src="images/logo_kakao.png" onClick={handleSocialLogin} />
+        <img src="images/logo_facebook.jpg" onClick={handleSocialLogin} />
         <img
           src="images/logo_google.png"
           style={{ border: '1px solid lightgrey', borderRadius: '50%' }}
-          onClick={handleImageClick}
+          onClick={handleSocialLogin}
         />
-        <img src="images/logo_naver.png" onClick={handleImageClick} />
+        <img src="images/logo_naver.png" onClick={handleSocialLogin} />
       </div>
     </div>
   )
