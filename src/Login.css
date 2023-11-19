@@ -93,10 +93,15 @@ button:hover {
   height: 40px;
 }
 
+input[type='checkbox'] {
+  width: 20px;
+}
+
 a,
 label {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
+  white-space: nowrap;
 }
 
 a:hover {

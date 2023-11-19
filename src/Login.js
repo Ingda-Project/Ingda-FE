@@ -58,9 +58,9 @@ const Login = () => {
       <div>
         {/* 회원가입 및 아이디/비밀번호 찾기 */}
         {/*<Link to="/register">회원가입</Link>*/}
-        <a href="/forgot">회원가입</a>
+        <Link to={'/register'}>회원가입</Link>
         <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="/forgot">아이디/비밀번호 찾기</a>
+        <a href="/register">아이디/비밀번호 찾기</a>
       </div>
       <div className="socialLogin">
         {/* 소셜 로그인 */}
