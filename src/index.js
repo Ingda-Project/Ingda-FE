@@ -4,12 +4,14 @@ import './index.css'
 import App from './App'
 import Login from './Login'
 import Register from './Register'
+import MyPage from './MyPage'
+import Header from './Header'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <App />
+    <MyPage />
   </React.StrictMode>
 )
 
